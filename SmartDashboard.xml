@@ -1,0 +1,143 @@
+<xml version="1.0">
+<dashboard>
+	<widget field=" Tilt" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1705" y="77"/>
+	</widget>
+	<widget field=" Gyro" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1695" y="42"/>
+	</widget>
+	<widget field=" Vision" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1766" y="277"/>
+	</widget>
+	<widget field="limelight_Stream" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1879" y="847"/>
+	</widget>
+	<widget field="limelight_Interface" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1881" y="824"/>
+	</widget>
+	<widget field="limelight_PipelineName" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1881" y="802"/>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1617" y="286"/>
+		<property name="Text" value="Intake Driver Cam"/>
+		<property name="Horizontal Alignment" value="Right"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="169" y="286"/>
+		<property name="Text" value="Limelight (grid vision)"/>
+		<property name="Horizontal Alignment" value="Left"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="302" y="49"/>
+		<width>109</width>
+		<height>23</height>
+		<property name="Text" value="Operator Camera:"/>
+		<property name="Horizontal Alignment" value="Left"/>
+	</static-widget>
+	<widget field=" Extension Pos." type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1720" y="212"/>
+	</widget>
+	<widget field=" Joint Pos." type="Number" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="1742" y="186"/>
+	</widget>
+	<widget field=" Extension Homed" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="1587" y="212"/>
+		<width>107</width>
+		<height>21</height>
+	</widget>
+	<widget field=" Joint Homed" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="1587" y="183"/>
+		<width>83</width>
+		<height>22</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.MjpgStreamViewerImpl">
+		<location x="88" y="305"/>
+		<width>1698</width>
+		<height>577</height>
+		<property name="MJPG Server URL" value="http://10.49.7.11:5800"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
+		<location x="311" y="7"/>
+		<width>541</width>
+		<height>276</height>
+		<property name="Camera Choice" value=""/>
+	</static-widget>
+	<widget field="Score Location High" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.CommandButton">
+		<location x="1275" y="18"/>
+		<width>154</width>
+		<height>66</height>
+	</widget>
+	<widget field="Score Location Mid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.CommandButton">
+		<location x="1276" y="136"/>
+		<width>154</width>
+		<height>66</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1811" y="11"/>
+		<property name="Text" value="Connected:"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.ConnectionIndicator">
+		<location x="1875" y="1"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Image">
+		<location x="984" y="11"/>
+		<width>80</width>
+		<height>82</height>
+		<property name="Image File" value="C:\4907images\Cube.png"/>
+		<property name="Maintain Aspect Ratio" value="true"/>
+	</static-widget>
+	<widget field="Cone" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.CommandButton">
+		<location x="882" y="131"/>
+		<width>92</width>
+		<height>68</height>
+	</widget>
+	<widget field="Cube" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.CommandButton">
+		<location x="878" y="16"/>
+		<width>92</width>
+		<height>66</height>
+	</widget>
+	<widget field="Disable Gyro" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.CommandButton">
+		<location x="1580" y="76"/>
+		<height>28</height>
+	</widget>
+	<widget field="Enable Gyro" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.CommandButton">
+		<location x="1579" y="40"/>
+		<width>93</width>
+		<height>27</height>
+	</widget>
+	<widget field=" Cube Selected" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="869" y="4"/>
+		<width>285</width>
+		<height>96</height>
+		<property name="Color to show when false" value="153.153.153.255"/>
+	</widget>
+	<widget field=" Mid Selected" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="1259" y="120"/>
+		<width>256</width>
+		<height>99</height>
+		<property name="Color to show when false" value="153.153.153.255"/>
+	</widget>
+	<widget field=" High Selected" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="1258" y="7"/>
+		<width>263</width>
+		<height>92</height>
+		<property name="Color to show when false" value="153.153.153.255"/>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Image">
+		<location x="991" y="126"/>
+		<width>68</width>
+		<height>78</height>
+		<property name="Image File" value="C:\4907images\Cone.png"/>
+		<property name="Maintain Aspect Ratio" value="true"/>
+	</static-widget>
+	<widget field=" Cone Selected" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="869" y="115"/>
+		<width>285</width>
+		<height>101</height>
+		<property name="Color to show when false" value="153.153.153.255"/>
+	</widget>
+</dashboard>
+<live-window>
+</live-window>
+</xml>

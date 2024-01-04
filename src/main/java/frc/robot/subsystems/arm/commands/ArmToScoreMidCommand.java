@@ -1,0 +1,20 @@
+package frc.robot.subsystems.arm.commands;
+
+import frc.robot.subsystems.arm.*;
+import frc.robot.subsystems.arm.commands.extension.*;
+import frc.robot.subsystems.arm.commands.joint.*;
+
+public class ArmToScoreMidCommand extends ArmMotionCommandBase {
+
+    public ArmToScoreMidCommand(
+        JointSubsystem jointSubsystem, 
+        ExtensionSubsystem extensionSubsystem) {
+        super(jointSubsystem, extensionSubsystem);
+        
+        this.addCommands(
+            new RetractExtensionCommand(extensionSubsystem),
+            new ScoreMidJointCommand(jointSubsystem),
+            new ScoreMidExtensionCommand(extensionSubsystem)
+        );
+    }
+}
